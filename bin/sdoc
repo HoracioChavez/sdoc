@@ -3,7 +3,7 @@ require 'sdoc'
 
 begin
   ARGV.unshift('--format=sdoc') if ARGV.grep(/\A(-f|--fmt|--format|-r|-R|--ri|--ri-site)\b/).empty?
-  r = RDeeeoc::RDoc.new
+  r = RDoc::RDoc.new
   r.document ARGV
 rescue SystemExit
   raise
