@@ -2,8 +2,8 @@
 require 'sdoc'
 
 begin
-  ARGV.unshift('--format=dockrocket') if ARGV.grep(/\A(-f|--fmt|--format|-r|-R|--ri|--ri-site)\b/).empty?
-  r = RDoc::RDoc.new
+  ARGV.unshift('--format=sdoc') if ARGV.grep(/\A(-f|--fmt|--format|-r|-R|--ri|--ri-site)\b/).empty?
+  r = RDeeeoc::RDoc.new
   r.document ARGV
 rescue SystemExit
   raise
